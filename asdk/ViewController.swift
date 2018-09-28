@@ -11,10 +11,27 @@ import UIKit
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
+    
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    let p = IdrPromise() { (resolve, nil) in
+      
+      DispatchQueue.global(qos: .default).asyncAfter(deadline: DispatchTime(uptimeNanoseconds: NSEC_PER_SEC * 1), execute: {
+        
+        resolve("hello promise")
+      })
+    }
+    
+    p.then({ res in
+      
+      return IdrPromise() {(resolve, reject) in
+     
+        resolve("Hello\(res ?? "do some thing")")
+      }
+    })
+    .then({res in
+      
+      print(res ?? "true")
+    })
   }
-
-
 }
-

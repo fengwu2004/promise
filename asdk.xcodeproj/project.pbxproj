@@ -12,6 +12,8 @@
 		2C72C2CE215B285600E105CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C72C2CC215B285600E105CA /* Main.storyboard */; };
 		2C72C2D0215B285800E105CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C72C2CF215B285800E105CA /* Assets.xcassets */; };
 		2C72C2D3215B285800E105CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C72C2D1215B285800E105CA /* LaunchScreen.storyboard */; };
+		2C72C2DD215B932500E105CA /* idrPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72C2DC215B932500E105CA /* idrPromise.swift */; };
+		2C72C2DF215B962F00E105CA /* idrNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72C2DE215B962F00E105CA /* idrNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2C72C2CF215B285800E105CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C72C2D2215B285800E105CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C72C2D4215B285800E105CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C72C2DC215B932500E105CA /* idrPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idrPromise.swift; sourceTree = "<group>"; };
+		2C72C2DE215B962F00E105CA /* idrNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idrNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2C72C2CF215B285800E105CA /* Assets.xcassets */,
 				2C72C2D1215B285800E105CA /* LaunchScreen.storyboard */,
 				2C72C2D4215B285800E105CA /* Info.plist */,
+				2C72C2DC215B932500E105CA /* idrPromise.swift */,
+				2C72C2DE215B962F00E105CA /* idrNetwork.swift */,
 			);
 			path = asdk;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C72C2DF215B962F00E105CA /* idrNetwork.swift in Sources */,
 				2C72C2CB215B285600E105CA /* ViewController.swift in Sources */,
 				2C72C2C9215B285600E105CA /* AppDelegate.swift in Sources */,
+				2C72C2DD215B932500E105CA /* idrPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T39E5QM8Q;
 				INFOPLIST_FILE = asdk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T39E5QM8Q;
 				INFOPLIST_FILE = asdk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
